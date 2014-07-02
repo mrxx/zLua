@@ -17,7 +17,7 @@ local User = {}
 -- @param string passwd 用户密码
 -- @param int icon 头像ID
 -- @param int heroId 英雄ID
--- @return {"token":<token>,"zoneOffset":28800,"serverTime":1403601121,"pushVer":8509,"userData":{"user":<user>,"equips":[<userEquip>],"heros":[<userHero>]}}
+-- @return {"userData":{"user":<user>,"heros":[<userHero>],"equips":[<userEquip>]},"zoneOffset":0,"serverTime":1404277233,"token":"97d7f3d079540c8d42224d2ca0a66d66","pushVer":1140}
 function User:register()
     local name = request:getStrParam("name", true, true)
     local passwd = request:getStrParam("passwd", true)
@@ -69,7 +69,7 @@ end
 --
 -- @param string name 用户名称
 -- @param string passwd 用户密码
--- @return {"token":<token>,"zoneOffset":28800,"serverTime":1403601121,"pushVer":8509,"userData":{"user":<user>,"equips":[<userEquip>],"heros":[<userHero>]}}
+-- @return {"userData":{"user":<user>,"heros":[<userHero>],"equips":[<userEquip>]},"zoneOffset":0,"serverTime":1404277233,"token":"97d7f3d079540c8d42224d2ca0a66d66","pushVer":1140}
 function User:login()
     local name = request:getStrParam("name", true, true)
     local passwd = request:getStrParam("passwd", true)

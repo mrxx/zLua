@@ -100,12 +100,12 @@ end
 
 --- 推送频道聊天消息（推送）
 --
--- @return {"op":2,"data":{"channel":1,"zoneOffset":28800,"serverTime":1403601121,"v":8509,"content":"test","fromId":1,"fromName":"zivn"},"error":null}
+-- @return {"channel":1,"zoneOffset":28800,"serverTime":1403601121,"v":8509,"content":"test","fromId":1,"fromName":"zivn"}
 function Chat:tell() end
 
 --- Ping消息
 --
--- @return {"op":3,"data":{"channel":3,"zoneOffset":28800,"serverTime":1403601121,"v":8509},"error":null}
+-- @return {"channel":3,"zoneOffset":28800,"serverTime":1403601121,"v":8509}
 function Chat:ping() end
 
 return util:inherit(Chat, ctrlBase):init()

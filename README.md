@@ -4,13 +4,13 @@ zLua
 
 系统要求
 ====
-## 软件最低版本需求
-* [Openresty](http://www.openresty.org/): v1.51    
-* [Nginx Push Stream Module](https://github.com/wandenberg/nginx-push-stream-module): v0.4    
-* [Redis](http://redis.io/download): v2.6    
-* [Lua-zlib](https://github.com/brimworks/lua-zlib): v0.2     
+## 软件需求
+* [Openresty](http://www.openresty.org/): ≥ 1.51    
+* [Nginx Push Stream Module](https://github.com/wandenberg/nginx-push-stream-module): ≥ 0.4    
+* [Redis](http://redis.io/download): ≥ 2.6    
+* [Lua-zlib](https://github.com/brimworks/lua-zlib): ≥ 0.2     
 
-## 软件安装事项
+## 软件安装
 *   实现 MySQL 的 JsonField 支持需替换 OpenResty 的 mysql 驱动。   
  
     拷贝 soft 中的 mysql.lua 至 OpenResty 对应目录即可。    

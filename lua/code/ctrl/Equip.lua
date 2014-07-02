@@ -35,7 +35,7 @@ end
 -- @return {"ok":true}
 function Equip:sell()
     local userInfo = self:getSessionInfo()
-    local sellIds = util.string:toNumList(request:getStrParam("sellIds", true), ",")
+    local sellIds = request:getNumsParam("sellIds", true, true)
 
     if #sellIds == 0 then
         exception:raise("core.badParams", { sellIds = sellIds })

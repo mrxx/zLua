@@ -34,7 +34,7 @@ end
 -- @return {"ok":true}
 function Hero:sell()
     local userInfo = self:getSessionInfo()
-    local sellIds = util.string:toNumList(request:getStrParam("sellIds", true), ",")
+    local sellIds = request:getNumsParam("sellIds", true, true)
 
     if #sellIds == 0 then
         exception:raise("core.badParams", { sellIds = sellIds })
@@ -65,7 +65,7 @@ end
 function Hero:devour()
     local userInfo = self:getSessionInfo()
     local heroId = request:getNumParam("heroId", true, true)
-    local devourIds = util.string:toNumList(request:getStrParam("devourIds", true), ",")
+    local devourIds = request:getNumsParam("devourIds", true, true)
 
     if #devourIds == 0 then
         exception:raise("core.badParams", { devourIds = devourIds })
