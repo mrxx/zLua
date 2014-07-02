@@ -26,8 +26,8 @@ zLua
 如果是 64 位 CentOS 系统，可用 soft/soft.sh 安装上述软件。
 
 ## Nginx 配置
-框架运作需要在 Nginx 的 http 和 server 中增加相关配置。
-<code>  
+框架运作需要在 Nginx 的 http 和 server 中增加相关配置。    
+<code>
 http
 {
     # Push Stream 共享内存大小
@@ -103,7 +103,7 @@ http
         }
     }
 }
-</code>  
+</code>     
 
 
 
