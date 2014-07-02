@@ -12,20 +12,6 @@ popd >/dev/null
 rm -rf ./redis-2.8.12
 echo "OK"
 
-
-echo -n ">> Install PHPRedis ... "
-tar xvzf ./phpredis-2.2.5.tar.gz 1>/dev/null
-
-pushd ./phpredis-2.2.5 >/dev/null
-    phpize 1>/dev/null 2>/dev/null
-    ./configure 1>/dev/null 2>/dev/null
-    make 1>/dev/null 2>/dev/null
-    make install 1>/dev/null 2>/dev/null
-popd >/dev/null
-
-rm -rf ./phpredis-2.2.5
-echo "OK"
-
 echo -n ">> Install OpenResty ... "
 yum -y install readline-devel pcre-devel openssl-devel 1>/dev/null 2>/dev/null
 tar xvzf ./ngx_openresty-1.7.0.1.tar.gz 1>/dev/null
