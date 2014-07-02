@@ -28,13 +28,13 @@ zLua
 ## Nginx 配置
 框架运作需要在 Nginx 的 http 和 server 中增加相关配置。    
 <code>
-http
-{
-    # Push Stream 共享内存大小
-    push_stream_shared_memory_size 256m;
+http    
+{    
+    # Push Stream 共享内存大小    
+    push_stream_shared_memory_size 256m;    
 
-    # Push Stream 频道无活动后被回收的时间
-    push_stream_channel_inactivity_time 30m;
+    # Push Stream 频道无活动后被回收的时间    
+    push_stream_channel_inactivity_time 30m;    
 
     # Push Stream 消息生存时间
     push_stream_message_ttl 30m;
@@ -101,7 +101,7 @@ http
             # 频道路径参数
             push_stream_channels_path $1;
         }
-    }
+    }    
 }
 </code>     
 
