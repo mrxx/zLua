@@ -4,12 +4,12 @@ zLua
 
 系统要求
 ====
-软件最低版本需求
-----
-Openresty: v1.51
-Nginx Push Stream Module: v0.4
-Redis: v2.6
-Lua-zlib: v0.2
+# 软件最低版本需求
+[Openresty](http://www.openresty.org/): v1.51
+[Nginx Push Stream Module](https://github.com/wandenberg/nginx-push-stream-module): v0.4
+[Redis](http://redis.io/download): v2.6
+[Lua-zlib](https://github.com/brimworks/lua-zlib): v0.2
+
 
 
 
